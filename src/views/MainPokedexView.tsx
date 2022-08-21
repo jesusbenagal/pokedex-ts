@@ -46,9 +46,9 @@ export const MainPokedexView = () => {
             />
           </div>
         ) : (
-          <Row md={3}>
+          <Row>
             {filteredPokemons().map((pokemon) => (
-              <Col key={pokemon.id} className="p-3">
+              <Col key={pokemon.id} className="p-3" md={4}>
                 <PokeCard pokemon={pokemon} />
               </Col>
             ))}
